@@ -1,0 +1,107 @@
+
+@media print {
+  body{
+      width: 21cm;
+      height: 29.7cm;
+      margin: auto;
+      /* change the margins as you want them to be. */
+ } 
+}
+.cv-container {
+  display: flex;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.left-column {
+  grid-area: left-column;
+  padding: 50px; 
+  background-color: #4472C4;
+  color: white;
+  width: 20%;
+}
+
+.right-column {
+  grid-area: right-column;
+  display: grid;
+  grid-template-rows: 150px;
+  grid-template-areas:
+    "header"
+    "content";
+    width: 80%;
+}
+
+.header {
+  grid-area: header;
+  padding: 50px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1 {
+  padding-top: 25px
+}
+
+.content {
+  grid-area: content;
+  padding-left: 50px;
+}
+
+.text-blue {
+  color: #4472C4;
+}
+
+.text-darkblue {
+  color: #002060;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  /* Espace les lettres entre elles de 1px */
+  margin: 0 0 1rem;
+}
+
+.header {
+  grid-area: header;
+  padding: 50px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+
+  background-color: #4472C4;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.experience-list {
+  list-style-type: circle;
+}
+
+.reseau {
+  text-align: right;
+}

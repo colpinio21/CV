@@ -1,0 +1,20 @@
+body {
+    grid-template-columns: 1fr 1fr;
+}
+
+.cv-container {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-column" "right-column" ;
+    width: 100%
+}
+
+.left-column {
+    background-color: black;
+    width: 30%
+}
+
+.right-column {
+    background-color: aqua;
+    width: 70%
+}
